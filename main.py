@@ -13,12 +13,12 @@ from aiohttp import web
 # Config 
 class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    API_ID = int(os.environ.get("API_ID",  "27536109"))
-    API_HASH = os.environ.get("API_HASH", "b84d7d4dfa33904d36b85e1ead16bd63")
+    API_ID = int(os.environ.get("API_ID",  "21567814"))
+    API_HASH = os.environ.get("API_HASH", "cd7dc5431d449fd795683c550d7bfb7e")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     SESSIONS = "./SESSIONS"
 
-    AUTH_USERS = os.environ.get('AUTH_USERS', '6428531614').split(',')
+    AUTH_USERS = os.environ.get('AUTH_USERS', '6126688051').split(',')
     for i in range(len(AUTH_USERS)):
         AUTH_USERS[i] = int(AUTH_USERS[i])
 
@@ -112,7 +112,7 @@ async def main():
     
     async def main():
         await PRO.start()
-        # h = await PRO.get_chat_member(chat_id= int(-1002447298131), user_id=6428531614)
+        # h = await PRO.get_chat_member(chat_id= int(-1002447298131), user_id=6126688051)
         # print(h)
         bot_info = await PRO.get_me()
         LOGGER.info(f"<--- @{bot_info.username} Started --->")
